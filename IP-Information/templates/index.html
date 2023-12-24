@@ -1,0 +1,53 @@
+
+{% extends 'base.html' %}
+ 
+ 
+{% block title %} IP Information {% endblock %}
+ 
+ 
+{% block body %}
+ 
+<div class="container">
+    <br>
+    <br>
+ 
+    <h1>IP Information</h1>
+    <br>
+    <br>
+ 
+    <form action="{% url 'index' %}" method="post">
+        {% csrf_token %}
+ 
+        <div class="form-group">
+ 
+            <input type="text" class="form-control" name="search" placeholder="Enter IP Address">
+ 
+ 
+        </div>
+ 
+        <input type="submit" class="btn btn-primary" value="Search">
+ 
+ 
+    </form>
+ 
+    <br>
+    <br>
+ 
+ 
+    <p>IP_Address : {{data.ip}}</p>
+     <p>City_Location : {{data.city}}</p>
+    <p>Country : {{data.country}}</p>
+ 
+    
+    <p>Latitude : {{data.latitude}}</p>
+   <p>Longitude : {{data.longitude}}</p>
+   <p>Time_Zone : {{data.timezone}}</p>
+   <p>Calling_Code : {{data.country_calling_code}}</p>
+   <p>Currency : {{data.currency}}</p>
+   
+   <p>Postal_Code : {{data.postal}}</p>
+    
+ 
+</div>
+ 
+{%  endblock %}
