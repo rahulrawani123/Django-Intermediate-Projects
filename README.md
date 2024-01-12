@@ -11,3 +11,5 @@ PROJECT 5 - (IP-Finder)
 
 PROJECT 6 - (Photos-Gallery)
 
+PROJECT 7 - (Resume-Uploader)
+
