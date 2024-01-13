@@ -13,3 +13,5 @@ PROJECT 6 - (Photos-Gallery)
 
 PROJECT 7 - (Resume-Uploader)
 
+PROJECT 8 - (MyResume)
+
